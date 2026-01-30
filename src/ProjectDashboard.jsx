@@ -19,6 +19,8 @@ function ProjectDashboard() {
       });
   }, []);
 
+  
+
   if (loading) {
     return <div style={{ padding: 20 }}>Loading project events...</div>;
   }
