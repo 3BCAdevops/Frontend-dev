@@ -1,11 +1,8 @@
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
 function StatsDashboard() {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     axios
       .get("http://localhost:8080/api/dev-events")
